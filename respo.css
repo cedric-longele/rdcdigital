@@ -1,0 +1,663 @@
+body{
+    font-family: verdana, sans-serif;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+/*header*/
+header{
+    border-bottom: brown 2px solid;
+    height: 100px;
+    background-color: violet;
+}
+header img{
+    width: 100px;
+    height: 100px;
+}
+header h1{
+    color: brown;
+    position: relative;
+    top: -120px;
+    left: 120px;
+}
+#rech{
+    position: relative;
+    top: -180px;
+    left: 30%;
+    width: 35%;
+    height: 25px;
+    display: inline-block;
+}
+#connexion{
+    display: inline-block;
+    position: relative;
+    top: -220px;
+    left: 70%;
+    width: 12%;
+    height: 25px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+#m{
+   color: blue; 
+}
+#info{
+    color: chocolate;
+}
+/*But media queries header*/
+@media screen and (max-width:1200px) {
+    header h1{
+        color: brown;
+        position: relative;
+        top: -110px;
+        left: -160px;
+        font-size: 22px;
+    }
+    #rech{
+        position: relative;
+        top: -150px;
+        left: 30%;
+        width: 35%;
+        height: 25px;
+        display: inline-block;
+    }
+    #connexion{
+        display: inline-block;
+        position: relative;
+        top: -190px;
+        left: 70%;
+        width: 12%;
+        background-color: darkblue;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:900px) {
+    header h1{
+        color: brown;
+        position: relative;
+        top: -110px;
+        left: -110px;
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width:802px) {
+    header h1{
+        color: brown;
+        position: relative;
+        top: -105px;
+        left: 40%;
+        font-size: 22px;
+        margin: auto;
+    }
+    #rech{
+        position: relative;
+        top: -100px;
+        left: 20%;
+        width: 40%;
+        height: 25px;
+        display: inline-block;
+    }
+    #connexion{
+        display: inline-block;
+        position: relative;
+        top: -140px;
+        left: 70%;
+        width: 100px;
+        font-size: 14px;
+        background-color: darkblue;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (max-width:670px) {
+    header h1{
+        color: brown;
+        position: relative;
+        top: -80px;
+        left: 30%;
+        font-size: 22px;
+        margin: auto;
+    }
+    header{
+        height: 80px;
+    }
+    header img{
+        width: 80px;
+        height: 80px;
+    }
+    #rech{
+        position: relative;
+        top: -60px;
+        left: 15%;
+        width: 50%;
+        height: 25px;
+        display: inline-block;
+    }
+    #connexion{
+        visibility: hidden;
+        display: inline-block;
+        position: relative;
+        top: -140px;
+        left: 70%;
+        width: 100px;
+        font-size: 14px;
+        background-color: darkblue;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+/*fin media queries header*/
+
+/*DEBUT DE NAV*/
+#div_menu{
+    background-color:navy;
+    height: 42px;
+    border-bottom: 5px solid violet;
+}
+
+nav{
+    width: 800px;
+    height: 30px;
+    padding-top: 13px;
+    margin: auto;
+        
+}
+nav ul{
+    display:inline-block;
+  
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    left: 5%;
+
+}
+
+nav a{
+    font-size: 1.2em;
+    color: white;
+    padding-top: 10px;
+    padding-bottom:10px;
+    width: 100%;
+    text-transform: uppercase;
+}
+nav a:hover{
+    border-left: 2px solid maroon;
+    border-right: 2px solid maroon;
+    background-color: rgba(238, 130, 238,0.5);
+}
+nav a{
+    display: inline-block;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+    top: -30px;
+    left: 90px;
+
+}
+#a_menu:hover{
+    background-color:rgba(128, 0, 0,0.6);
+    text-align: center;
+}
+#a_cours:hover{
+    background-color: rgba(0, 128, 0,0.6);
+}
+#a_dec:hover{
+    background-color: rgba(255, 255, 0,0.5);
+}
+
+@media screen and (max-width:800px) {
+    #div_menu{
+         background-color:navy;
+        height: 23px;
+    
+    }
+    nav{
+        width: 800px;
+        height: 10px;
+        padding-top: 13px;
+        margin: auto;
+         background-color:navy;
+        
+    }
+  
+    nav li{
+        list-style: none;
+        display: inline-block;
+       
+        position: relative;
+        left: 0%;
+    
+    }
+    
+    nav a{
+    font-size: 1em;
+    color: white;
+    position: relative;
+    left: 1%;
+    padding-top: 2px;
+    }
+    nav a:hover{
+        height: 13px;
+    }
+  
+    #div_menu{
+        border-bottom: 3px solid violet;
+    }
+}
+
+@media screen and (max-width:700px) {
+    nav li{
+        list-style: none;
+        display: inline-block;
+        width: 120px;
+        position: relative;
+        left: 0%;
+    
+    }
+}
+@media screen and (max-width:600px){
+    nav a{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 0.9em;
+    }
+     nav li{
+        list-style: none;
+        display: inline-block;
+        width: 120px;
+        position: relative;
+       }
+}
+@media screen and (max-width:500px){
+    nav a{
+        font-size: 0.7em;
+    }
+    nav li{
+        width: 70px;
+    }
+}
+@media screen and (max-width:400px){
+    nav li{
+       position: relative;
+       left: -25px;
+    }
+}
+@media screen and (max-width:325px){
+    nav {
+        width: auto;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    #div_menu{
+        width: auto;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    nav li{
+        list-style: none;
+        display: inline-block;
+        width: 55px;
+        position: relative;
+        left: -41px;
+    }
+    nav a{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+}
+/*fin nav*/
+
+/*DEBUT PRESENTATION*/
+#englobe_pres{
+    margin: auto;
+    width: 1200px;
+    padding: 10px;
+    
+}
+
+#presentation{
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid rgb(185, 185, 185);
+    display: block;
+    width: 800px;
+    margin-left: 10px;
+    position: relative;
+    float:left;
+    margin-right: 10px;
+    height: 420px;
+}
+#div1_pres{
+    width: 800px;
+    margin: auto;
+    line-height: 5px;
+    font-family: verdana, sans-serif;
+}
+#unikin{
+   text-align: center; 
+   display: block;
+   margin: 0px;
+   padding: 0px;
+   
+}
+#fac_science{
+    text-align: center;
+}
+#dpt{
+    text-align: center;
+    font-size: 18px;
+}
+#div2_p1, #div2_p2{
+    text-align: justify;
+}
+#apropos{
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px blue solid;
+    display: inline-block;
+    width: 330Px;
+}
+
+#communique h1{
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#communique p{
+    padding: 10px;
+}
+
+/*laissez nous un message*/
+#div_respo{
+    width: 50%;
+    background: -webkit-linear-gradient(left, green,gray, blue);
+    background: -moz-linear-gradient(right, green,gray, blue);
+    background: -o-linear-gradient(right, green,gray, blue);
+    background: linear-gradient(right, green,gray, blue);
+    margin: auto;
+    padding: 2px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+#h3_respo{
+    display:block;
+    width: auto;
+    text-align:center;
+    
+}
+input, textarea{
+    width: 65%;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: inline-block;
+    overflow: auto;
+}
+textarea{
+    height: 80px;
+}
+label{
+    font-size: 18px;
+    display: inline-block;
+    display: none;
+ }
+input::placeholder{
+    visibility: visible;
+}
+@media screen and (max-width:1200px){
+    h1{
+        font-size: 18px;
+        margin-left: 30%;
+    }
+    #h3_respo{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:900px){
+    h1{
+        font-size: 18px;
+        margin-left: 30%;
+    }
+    #h3_respo{
+    font-size: 16px;
+        
+    }
+}
+@media screen and (max-width:800px){
+    h1{
+        font-size: 15px;
+        margin-left: 25%;
+    }
+    #div_respo{
+        width: 60%;
+    }
+    #h3_respo{
+        font-size: 14px;
+            
+        }
+    li {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:600px){
+    h1{
+        font-size: 14px;
+        margin-left: 5%;
+        width: auto;
+    }
+    #h3_respo{
+        font-size: 12px;
+            
+        }
+    #div_respo{
+        width: 65%;
+    }
+    input{
+        height: 25px;
+    }
+    textarea{
+        height: 50px;
+    }
+    li {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:500px){
+    h1{
+        font-size: 14px;
+        margin-left: 5%;
+        width: auto;
+    }
+    #div_respo{
+        width: 75%;
+    }
+}
+@media screen and (max-width:400px){
+    h1{
+        font-size: 14px;
+        margin-left: 5%;
+        width: auto;
+    }
+    #div_respo{
+        width: 85%;
+    }
+    input{
+        height: 20px;
+    }
+    textarea{
+        height: 40px;
+    }
+}
+/*footer*/
+footer{
+    color: white;
+    background-color: rgb(9, 9, 31);
+    border-top: maroon solid 5px;
+    height: 100%;
+}
+footer p{
+
+    margin: auto;
+    color: white;
+}
+#div1_foot{
+    width: 30%;
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    padding-right: 3px;
+}
+#div2_foot{
+    width: 30%;
+    display: inline-block;
+    float:left;
+    margin-left: 5px;
+    border-left: 2px solid orange;
+    border-right: 2px solid orange;
+    padding-right: 3px;
+}
+#div3_foot{
+    width: 30%;
+    display: inline-block;
+    margin-left: 5px;
+}
+#div46_foot{
+    display: flex;
+   
+}
+#div4_foot{
+    width: 47%;
+    border-right: 2px solid orange ;
+}
+#div5_foot{
+    width: 47%;
+    margin-left: 10px;
+    display: inline-block;
+}
+#div6_foot{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+
+@media screen and (max-width:1240px){
+    #englobe_pres{
+        width: auto;
+    }
+    #presentation{
+        width: auto;
+        height: auto;
+    }
+    #apropos{
+        width: auto;
+    }
+    #unikin{
+        text-align: center;
+    }
+    #div1_pres{
+        width: auto;
+    }
+}
+
+@media screen and (max-width:840px){
+    #englobe_pres{
+        background-color: green;
+        width: auto;
+    }
+    #presentation{
+        width: auto;
+        height: auto;
+    }
+    #apropos{
+        width: auto;
+    }
+    #unikin{
+        text-align: center;
+    
+    }
+    #fac_science{
+        font-size: 14px;
+    }
+    #dpt{
+        font-size: 12px;
+    }
+    #div1_pres{
+        font-size: 14px;
+        width: auto;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #englobe_pres{
+        background-color: green;
+        width: auto;
+    }
+    #presentation{
+        width: auto;
+        height: auto;
+    }
+    #apropos{
+        width: auto;
+    }
+    #unikin{
+        text-align: center;
+    
+    }
+    #fac_science{
+        font-size: 14px;
+    }
+    #dpt{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    #div1_pres{
+        font-size: 14px;
+        width: auto;
+    }
+    p{
+        font-size: 12px;
+    }
+    li {
+        font-size: 12px;
+    }
+    img, table, td, blockquote, code, pre, textarea, input, iframe,
+object, embed, video {
+max-width: 100%;
+}
+}
+
+/*Media queries footer*/
+@media screen and (max-width:800px){
+    #div6_foot{
+        width: 80%;
+        margin: auto;
+        padding-bottom: 10px;
+        text-align: center;
+        
+    }
+}
